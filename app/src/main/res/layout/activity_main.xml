@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/qr_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type a text ..." />
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Generate QR" />
+
+    <ImageView
+        android:id="@+id/qr_place_holder"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/qr_icon" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/scan_btn"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:text="Scan QR"/>
+
+</LinearLayout>
